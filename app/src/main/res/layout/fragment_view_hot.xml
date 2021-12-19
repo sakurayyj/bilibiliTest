@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background1"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fan1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/which_hot"
+            android:text="热门"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/which_hot"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/f1">
+
+            <ImageView
+                android:id="@+id/fanju1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gwpm2">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="独家"
+                android:textSize="11sp"
+                android:background="@drawable/background8"
+                android:textColor="@color/white"
+                app:layout_constraintRight_toRightOf="@+id/fanju1"
+                app:layout_constraintTop_toTopOf="@id/fanju1"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ♡ "
+                android:background="@drawable/background7"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="@+id/fanju1"
+                app:layout_constraintTop_toTopOf="@id/fanju1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/f1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/which_hot"
+            tools:ignore="MissingConstraints">
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/gwpm21"
+            app:layout_constraintLeft_toRightOf="@+id/f1"
+            app:layout_constraintTop_toBottomOf="@+id/which_hot"
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/gwpm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国王排名"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/f1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="10dp"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="4600859 综合评分"
+                android:textColor="@color/bl_gray"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/f1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bofang"
+            app:layout_constraintLeft_toRightOf="@+id/gwpm21"
+            app:layout_constraintTop_toBottomOf="@+id/which_hot" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fan3"
+        app:layout_constraintTop_toBottomOf="@+id/fan2"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/f12">
+
+            <ImageView
+                android:id="@+id/fanju12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gwpm2">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="独家"
+                android:textSize="11sp"
+                android:background="@drawable/background8"
+                android:textColor="@color/white"
+                app:layout_constraintRight_toRightOf="@+id/fanju12"
+                app:layout_constraintTop_toTopOf="@id/fanju12"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ♡ "
+                android:background="@drawable/background7"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="@+id/fanju12"
+                app:layout_constraintTop_toTopOf="@id/fanju12" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/f11"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fan1"
+            tools:ignore="MissingConstraints,NotSibling">
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/gwpm4"
+            app:layout_constraintLeft_toRightOf="@+id/f12"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/gwpm3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国王排名"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/f1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="10dp"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="4600859 综合评分"
+                android:textColor="@color/bl_gray"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/f11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bofang"
+            app:layout_constraintLeft_toRightOf="@+id/gwpm4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fan2"
+        app:layout_constraintTop_toBottomOf="@+id/fan1"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/f11">
+
+            <ImageView
+                android:id="@+id/fanju11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gwpm2">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="独家"
+                android:textSize="11sp"
+                android:background="@drawable/background8"
+                android:textColor="@color/white"
+                app:layout_constraintRight_toRightOf="@+id/fanju11"
+                app:layout_constraintTop_toTopOf="@id/fanju11"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ♡ "
+                android:background="@drawable/background7"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="@+id/fanju11"
+                app:layout_constraintTop_toTopOf="@id/fanju11" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/f11"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fan1"
+            tools:ignore="MissingConstraints,NotSibling">
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/gwpm2"
+            app:layout_constraintLeft_toRightOf="@+id/f11"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/gwpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国王排名"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/f1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="10dp"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="4600859 综合评分"
+                android:textColor="@color/bl_gray"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@+id/f11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="MissingConstraints,NotSibling" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bofang"
+            app:layout_constraintLeft_toRightOf="@+id/gwpm2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

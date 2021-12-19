@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dongtai.Fragment_synthesize"
+    tools:ignore="MissingConstraints"
+    android:orientation="horizontal">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"/>
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background1"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="经常访问"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/bl_gray"
+                    android:text="查看更多>"
+                    android:textSize="12sp"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/xiaojiayu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gaoshu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toRightOf="@+id/xiaojiayu" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/zhangxuefeng"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toRightOf="@+id/gaoshu" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yuc"
+                    app:layout_constraintTop_toBottomOf="@id/xiaojiayu"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_margin="10dp"
+                    android:text="鱼C-小甲鱼"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/daxuegaoshu"
+                    app:layout_constraintTop_toBottomOf="@id/gaoshu"
+                    app:layout_constraintLeft_toRightOf="@id/yuc"
+                    android:layout_margin="10dp"
+                    android:text="大学就是学不会高数"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zxf"
+                    app:layout_constraintTop_toBottomOf="@id/zhangxuefeng"
+                    app:layout_constraintLeft_toRightOf="@id/daxuegaoshu"
+                    android:layout_margin="10dp"
+                    android:text="张雪峰老师官方号"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="推荐话题"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/bl_gray"
+                    android:text="查看更多>"
+                    android:textSize="12sp"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+
+            <com.example.mybilibili.others.NestedScrollableHost
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_huati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.example.mybilibili.others.NestedScrollableHost>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/qianfeng"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/qfpython"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="千峰python"
+                    android:textColor="@color/bl_pink"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/twohtg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/qfpython"
+                    android:text="2小时前·投稿了文章"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/dian"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shumore"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/twohtg"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="【Python趣味干货系列】 第三十四期：刚刚，豆瓣崩了..."
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/douban"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/bl_gray"
+                        android:text="最艰难吃瓜的事情挺多啊！上周的吴某凡，现在又来一个把服务器搞崩的，听说：豆瓣崩了。什么情况？跟着宋..."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="107阅读"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/qianfeng1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/qfpython1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="千峰python"
+                    android:textColor="@color/bl_pink"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/twohtg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/qfpython1"
+                    android:text="2小时前·投稿了文章"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/dian1"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shumore"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/twohtg1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="【Python趣味干货系列】 第三十四期：刚刚，豆瓣崩了..."
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/douban"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/bl_gray"
+                        android:text="最艰难吃瓜的事情挺多啊！上周的吴某凡，现在又来一个把服务器搞崩的，听说：豆瓣崩了。什么情况？跟着宋..."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="107阅读"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/qianfeng2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/qfpython2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="千峰python"
+                    android:textColor="@color/bl_pink"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/twohtg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/qfpython2"
+                    android:text="2小时前·投稿了文章"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/dian2"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shumore"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/twohtg2"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="【Python趣味干货系列】 第三十四期：刚刚，豆瓣崩了..."
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/douban"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/bl_gray"
+                        android:text="最艰难吃瓜的事情挺多啊！上周的吴某凡，现在又来一个把服务器搞崩的，听说：豆瓣崩了。什么情况？跟着宋..."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="107阅读"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/qianfeng3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/qfpython3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="千峰python"
+                    android:textColor="@color/bl_pink"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/twohtg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/qfpython3"
+                    android:text="2小时前·投稿了文章"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/dian3"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shumore"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/twohtg3"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="【Python趣味干货系列】 第三十四期：刚刚，豆瓣崩了..."
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/douban"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/bl_gray"
+                        android:text="最艰难吃瓜的事情挺多啊！上周的吴某凡，现在又来一个把服务器搞崩的，听说：豆瓣崩了。什么情况？跟着宋..."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="107阅读"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/qianfeng4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/qfpython4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="千峰python"
+                    android:textColor="@color/bl_pink"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/twohtg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/qfpython4"
+                    android:text="2小时前·投稿了文章"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/dian4"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shumore"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/twohtg4"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="【Python趣味干货系列】 第三十四期：刚刚，豆瓣崩了..."
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/douban"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/bl_gray"
+                        android:text="最艰难吃瓜的事情挺多啊！上周的吴某凡，现在又来一个把服务器搞崩的，听说：豆瓣崩了。什么情况？跟着宋..."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="107阅读"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/qianfeng5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/head_photo"
+                    android:layout_margin="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/qfpython5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="千峰python"
+                    android:textColor="@color/bl_pink"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng5"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/twohtg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/qfpython5"
+                    android:text="2小时前·投稿了文章"
+                    android:textSize="11sp"
+                    app:layout_constraintLeft_toRightOf="@id/qianfeng5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/dian5"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shumore"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/twohtg5"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="【Python趣味干货系列】 第三十四期：刚刚，豆瓣崩了..."
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/douban"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/bl_gray"
+                        android:text="最艰难吃瓜的事情挺多啊！上周的吴某凡，现在又来一个把服务器搞崩的，听说：豆瓣崩了。什么情况？跟着宋..."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="107阅读"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

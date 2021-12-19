@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+
+
+        <ImageView
+            android:id="@+id/img_sb"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/shouban"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/zhoubian"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手办"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/img_sb"
+            app:layout_constraintLeft_toLeftOf="@+id/img_sb"
+            app:layout_constraintRight_toRightOf="@id/img_sb"/>
+
+        <ImageView
+            android:id="@+id/cyfs"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/fs_zb"
+            app:layout_constraintLeft_toRightOf="@id/zhuangbei"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_sb"
+            app:layout_constraintBottom_toBottomOf="@id/img_sb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次元服饰"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/cyfs"
+            app:layout_constraintLeft_toLeftOf="@+id/cyfs"
+            app:layout_constraintRight_toRightOf="@id/cyfs"/>
+
+        <ImageView
+            android:id="@+id/zhoubian"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/zhoubian"
+            app:layout_constraintLeft_toRightOf="@+id/img_sb"
+            app:layout_constraintRight_toLeftOf="@+id/mzdy"
+            app:layout_constraintTop_toTopOf="@+id/img_sb"
+            app:layout_constraintBottom_toBottomOf="@+id/img_sb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周边"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/zhoubian"
+            app:layout_constraintLeft_toLeftOf="@+id/zhoubian"
+            app:layout_constraintRight_toRightOf="@id/zhoubian"/>
+
+        <ImageView
+            android:id="@+id/zhuangbei"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/yxzb"
+            app:layout_constraintLeft_toRightOf="@+id/tsmh"
+            app:layout_constraintRight_toLeftOf="@id/cyfs"
+            app:layout_constraintTop_toTopOf="@+id/img_sb"
+            app:layout_constraintBottom_toBottomOf="@+id/img_sb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3C装备"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/zhuangbei"
+            app:layout_constraintLeft_toLeftOf="@+id/zhuangbei"
+            app:layout_constraintRight_toRightOf="@id/zhuangbei"/>
+
+        <ImageView
+            android:id="@+id/mzdy"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mzdy"
+            app:layout_constraintLeft_toRightOf="@+id/zhoubian"
+            app:layout_constraintRight_toLeftOf="@id/tsmh"
+            app:layout_constraintTop_toTopOf="@+id/img_sb"
+            app:layout_constraintBottom_toBottomOf="@+id/img_sb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="漫展电影"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/mzdy"
+            app:layout_constraintLeft_toLeftOf="@+id/mzdy"
+            app:layout_constraintRight_toRightOf="@id/mzdy"/>
+
+        <ImageView
+            android:id="@+id/tsmh"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/tsmh"
+            app:layout_constraintLeft_toRightOf="@+id/mzdy"
+            app:layout_constraintRight_toLeftOf="@id/zhuangbei"
+            app:layout_constraintTop_toTopOf="@+id/img_sb"
+            app:layout_constraintBottom_toBottomOf="@+id/img_sb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图书漫画"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tsmh"
+            app:layout_constraintLeft_toLeftOf="@+id/tsmh"
+            app:layout_constraintRight_toRightOf="@id/tsmh"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/gengxinzhi"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:text=" 更新至第7话 "
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:gravity="right|bottom"
+            android:background="@drawable/other4"
+            />
+        <TextView
+            android:id="@+id/huiyuan_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background6"
+            android:layout_gravity="right|top"
+            android:layout_margin="5dp"
+            android:text="会员抢先"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/fan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:text="关于前辈很烦人的事"
+        android:textColor="@color/bl_gray"
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/fensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="11sp"
+        android:text="390.2万追番"
+        app:layout_constraintTop_toBottomOf="@id/fan_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

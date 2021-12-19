@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="footButton" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/bl_pink</item>
+        <item name="android:textColorSecondary">@color/bl_gray</item>
+        <!-- 修改标题栏为白色 ,注意后面版本号设置-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- 修改标题栏字体为黑色 -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+    </style>
+
+</resources>

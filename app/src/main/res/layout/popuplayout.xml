@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/more_live"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/more_live"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/line_one"/>
+
+    <TextView
+        android:id="@+id/m_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/more_live"
+        app:layout_constraintRight_toRightOf="@+id/more_live"
+        app:layout_constraintTop_toBottomOf="@+id/more_live"
+        android:layout_marginBottom="10dp"
+        android:text="开直播"
+        android:textSize="11sp"
+        android:textColor="@color/black"/>
+
+   <ImageView
+       android:id="@+id/line_one"
+       android:layout_width="20dp"
+       android:layout_height="50dp"
+       android:src="@drawable/shu_line"
+       app:layout_constraintLeft_toRightOf="@+id/more_live"
+       app:layout_constraintRight_toLeftOf="@+id/more_photo"
+       app:layout_constraintTop_toTopOf="@+id/more_live"
+       app:layout_constraintBottom_toBottomOf="@+id/more_live"/>
+
+    <ImageView
+        android:id="@+id/more_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/more_photo"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="@+id/more_live"
+        app:layout_constraintBottom_toBottomOf="@id/more_live"
+        app:layout_constraintLeft_toRightOf="@id/line_one"
+        app:layout_constraintRight_toLeftOf="@+id/line_two"
+        />
+
+    <TextView
+        android:id="@+id/m_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/more_photo"
+        app:layout_constraintRight_toRightOf="@+id/more_photo"
+        app:layout_constraintTop_toBottomOf="@+id/more_live"
+        android:layout_marginBottom="10dp"
+        android:text="拍摄"
+        android:textSize="11sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/line_two"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:src="@drawable/shu_line"
+        app:layout_constraintLeft_toRightOf="@+id/more_photo"
+        app:layout_constraintRight_toLeftOf="@+id/more_shangchuan"
+        app:layout_constraintTop_toTopOf="@+id/more_live"
+        app:layout_constraintBottom_toBottomOf="@+id/more_live"/>
+
+    <ImageView
+        android:id="@+id/more_shangchuan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/more_shangchuan"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="@+id/more_live"
+        app:layout_constraintBottom_toBottomOf="@id/more_live"
+        app:layout_constraintLeft_toRightOf="@id/line_two"
+        app:layout_constraintRight_toLeftOf="@+id/line_three"
+        />
+
+    <TextView
+        android:id="@+id/m_shangchuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/more_shangchuan"
+        app:layout_constraintRight_toRightOf="@+id/more_shangchuan"
+        app:layout_constraintTop_toBottomOf="@+id/more_shangchuan"
+        android:layout_marginBottom="10dp"
+        android:text="上传"
+        android:textSize="11sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/line_three"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:src="@drawable/shu_line"
+        app:layout_constraintLeft_toRightOf="@+id/more_shangchuan"
+        app:layout_constraintRight_toLeftOf="@+id/more_moban"
+        app:layout_constraintTop_toTopOf="@+id/more_live"
+        app:layout_constraintBottom_toBottomOf="@+id/more_live"/>
+
+    <ImageView
+        android:id="@+id/more_moban"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/moban"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="@+id/more_live"
+        app:layout_constraintBottom_toBottomOf="@id/more_live"
+        app:layout_constraintLeft_toRightOf="@id/line_three"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/m_mbcz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/more_moban"
+        app:layout_constraintRight_toRightOf="@+id/more_moban"
+        app:layout_constraintTop_toBottomOf="@+id/more_moban"
+        android:layout_marginBottom="10dp"
+        android:text="模板创作"
+        android:textSize="11sp"
+        android:textColor="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
